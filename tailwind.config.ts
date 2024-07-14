@@ -36,6 +36,7 @@ const config = {
         'cat-comic': 'var(--font-cat-comic)',
         'mulish': 'var(--font-mulish)',
         'open-sans': 'var(--font-open-sans)',
+        'poppins': 'var(--font-poppins)',
       },
       backgroundImage: {
         'header': "url('/assets/images/asset-landing-bg.svg')",
@@ -43,6 +44,7 @@ const config = {
         'clouds': "url('/assets/images/asset-clouds.svg')",
         'wall': "url('/assets/images/wall.svg')",
         'road': "url('/assets/images/road.svg')",
+        'lake': "url('/assets/images/lake.svg')",
       },
     },
   },

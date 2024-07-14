@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import ClientSidePieChart from "@/components/ui/client-side-pie-chart";
 import TokenomicsCard from "@/components/ui/tokenomics-card";
 import Image from "next/image";
+import Link from "next/link";
 import { FaCircle } from "react-icons/fa";
 
 export default function Home() {
@@ -342,6 +343,66 @@ export default function Home() {
               <p className="-mt-2">Expanding CEX listings</p>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="relative z-40 -mt-24">
+        <div className="px-10">
+          <h1 className="mt-6 font-cat-comic text-[100px] leading-[109.61px] text-white">
+            SAY NO TO <br className="hidden md:block" /> EMPTY BOWLS
+          </h1>
+          <p className="font-open-sans text-[27.31px] font-bold uppercase text-white">
+            Every trade feeds hungry <br /> cats around the world
+          </p>
+        </div>
+        <Image
+          src="/assets/images/lake.svg"
+          width={1332.59}
+          height={500}
+          className="-mt-[350px] w-full"
+          alt=""
+        />
+      </div>
+      <div className="relative z-50 -mt-[200px] w-full border-t border-t-[#ECE9E24D] px-20">
+        <div className="flex items-center justify-between border-b border-b-slate-950 py-6">
+          <Image
+            src="/assets/images/logo-dark.svg"
+            width={71.74}
+            height={59.69}
+            alt=""
+          />
+
+          <div className="item-center font-poppins flex gap-5 text-[16px]">
+            <Link href="" className="">
+              <p className="hover:underline"> Terms & Conditions</p>
+            </Link>
+            <Link href="" className="">
+              <p className="hover:underline">Privacy Policy</p>
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-5">
+            <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-white">
+              <Image
+                src="/assets/icons/telegram-dark.svg"
+                width={24}
+                height={24}
+                alt=""
+              />
+            </span>
+            <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-white">
+              <Image
+                src="/assets/icons/x-dark.svg"
+                width={20}
+                height={20}
+                alt=""
+              />
+            </span>
+          </div>
+        </div>
+        <div className="pb-10 pt-6">
+          <p className="text-center font-open-sans text-[16px] text-slate-700">
+            $SCAT ©2024 All Rights Reserved
+          </p>
         </div>
       </div>
     </div>

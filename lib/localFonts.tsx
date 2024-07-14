@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { Mulish, Open_Sans } from "next/font/google";
+import { Mulish, Open_Sans, Poppins } from "next/font/google";
 
 export const catComic = localFont({
   display: "swap",
@@ -16,4 +16,10 @@ export const mulish = Mulish({
 export const open_sans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
+});
+
+export const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-poppins",
 });
