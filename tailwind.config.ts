@@ -35,6 +35,14 @@ const config = {
       fontFamily: {
         'cat-comic': 'var(--font-cat-comic)',
         'mulish': 'var(--font-mulish)',
+        'open-sans': 'var(--font-open-sans)',
+      },
+      backgroundImage: {
+        'header': "url('/assets/images/asset-landing-bg.svg')",
+        'kite': "url('/assets/images/asset-cat-kite-paper.svg')",
+        'clouds': "url('/assets/images/asset-clouds.svg')",
+        'wall': "url('/assets/images/wall.svg')",
+        'road': "url('/assets/images/road.svg')",
       },
     },
   },

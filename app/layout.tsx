@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { catComic, mulish } from "@/lib/localFonts";
+import { catComic, mulish, open_sans } from "@/lib/localFonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${catComic.variable} ${mulish.variable}`}>
+      <body
+        className={`${catComic.variable} ${mulish.variable} ${open_sans.variable}`}
+      >
         {children}
       </body>
     </html>
