@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import ClientSidePieChart from "@/components/ui/client-side-pie-chart";
+import Navbar from "@/components/ui/navbar";
 import TokenomicsCard from "@/components/ui/tokenomics-card";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,57 +7,39 @@ import { FaCircle } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="bg-[#003354]">
+    <div className="bg-[rgb(0,51,84)]">
       <header className="h-full bg-header bg-cover bg-no-repeat">
-        <nav className="flex items-center justify-between px-10 py-5">
-          <Image
-            src="/assets/images/logo.svg"
-            width={71.74}
-            height={59.69}
-            alt=""
-          />
+        <Navbar />
 
-          <div className="flex items-center gap-5">
-            <Image src="/assets/icons/sun.svg" width={24} height={24} alt="" />
-            <Image
-              src="/assets/icons/telegram.svg"
-              width={24}
-              height={24}
-              alt=""
-            />
-            <Image src="/assets/icons/x.svg" width={24} height={24} alt="" />
-
-            <Button className="h-min rounded-[10px] bg-white px-8 py-[14px] font-open-sans text-[16px] text-slate-950 hover:bg-white">
-              BUY $SCAT
-            </Button>
-          </div>
-        </nav>
-
-        <div className="-mt-20 h-[1000px] bg-kite bg-cover bg-top bg-no-repeat px-20 pt-40">
+        <div className="-mt-20 h-screen items-center bg-contain bg-no-repeat px-10 pt-40 md:h-[1000px] md:bg-kite md:bg-cover md:bg-top md:px-20">
           {/* text */}
           <div>
-            <p className="font-open-sans text-[27.31px] font-bold uppercase text-white">
+            <p className="text-center font-open-sans text-sm font-bold uppercase text-white md:text-start md:text-[27.31px]">
               Welcome to the Simon’s Cat official Token
             </p>
-            <h1 className="mt-6 font-cat-comic text-[104.39px] leading-[109.61px] text-white">
-              One Cat, Billions <br /> of Owners’
+            <h1 className="mt-6 text-center font-cat-comic text-[56px] leading-[58.8px] text-white md:text-start md:text-[104.39px] md:leading-[109.61px]">
+              One Cat, Billions <br className="hidden md:block" /> of Owners’
             </h1>
           </div>
         </div>
       </header>
-      <div className="mt-20 flex justify-between px-20">
-        <div className="h-[400px] w-[450px] bg-clouds bg-contain bg-no-repeat pl-20 pr-10 pt-24">
+      <div className="flex justify-between px-5 md:mt-20 md:px-20">
+        <div className="h-[175px] w-[197px] bg-clouds bg-contain bg-no-repeat pl-10 pt-7 md:h-[400px] md:w-[450px] md:pl-20 md:pr-10 md:pt-24">
           <div>
-            <h4 className="font-cat-comic text-[35.09px]">Floki</h4>
-            <p className="font-mulish text-[26.32px] font-medium leading-[27.63px]">
+            <h4 className="font-cat-comic text-[24px] md:text-[35.09px]">
+              Floki
+            </h4>
+            <p className="font-mulish text-xs font-medium leading-[15.06px] md:text-[26.32px] md:leading-[27.63px]">
               We need a small description here
             </p>
           </div>
         </div>
-        <div className="mt-32 h-[400px] w-[400px] bg-clouds bg-contain bg-no-repeat pl-20 pr-10 pt-24">
+        <div className="mt-32 h-[174px] w-[181px] bg-clouds bg-contain bg-no-repeat pl-10 pt-7 md:h-[400px] md:w-[400px] md:pl-20 md:pr-10 md:pt-24">
           <div>
-            <h4 className="font-cat-comic text-[35.09px]">Floki</h4>
-            <p className="font-mulish text-[26.32px] font-medium leading-[27.63px]">
+            <h4 className="font-cat-comic text-[24px] md:text-[35.09px]">
+              Floki
+            </h4>
+            <p className="font-mulish text-xs font-medium leading-[15.06px] md:text-[26.32px] md:leading-[27.63px]">
               We need a small description here
             </p>
           </div>
@@ -135,7 +117,14 @@ export default function Home() {
           src="/assets/images/wall.svg"
           width={1447.49}
           height={963.51}
-          className="w-full"
+          className="hidden w-full md:block"
+          alt=""
+        />
+        <Image
+          src="/assets/images/wall.svg"
+          width={1447.49}
+          height={963.51}
+          className=" w-full md:block"
           alt=""
         />
 
@@ -371,7 +360,7 @@ export default function Home() {
             alt=""
           />
 
-          <div className="item-center font-poppins flex gap-5 text-[16px]">
+          <div className="item-center flex gap-5 font-poppins text-[16px]">
             <Link href="" className="">
               <p className="hover:underline"> Terms & Conditions</p>
             </Link>

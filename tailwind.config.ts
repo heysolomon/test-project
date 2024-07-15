@@ -40,6 +40,7 @@ const config = {
       },
       backgroundImage: {
         'header': "url('/assets/images/asset-landing-bg.svg')",
+        'header-mb': "url('/assets/images/landing-bg-mobile.svg')",
         'kite': "url('/assets/images/asset-cat-kite-paper.svg')",
         'clouds': "url('/assets/images/asset-clouds.svg')",
         'wall': "url('/assets/images/wall.svg')",
